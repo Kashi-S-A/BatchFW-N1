@@ -1,0 +1,42 @@
+package com.ty.read;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+
+@RestController
+public class ReadController {
+
+	@PostMapping("/api/post")
+	public String postApi() {
+		return "This is post api";
+	}
+	
+	@GetMapping("/api/get")
+	public String getApi() {
+		return "This is get api";
+	}
+	
+	@PutMapping("/api/put")
+	public String putApi() {
+		return "This is put api";
+	}
+	
+	@PatchMapping("/api/patch")
+	public String patchApi() {
+		return "This is Patch api";
+	}
+	
+	@DeleteMapping("/api/delete")
+	public String getApi() {
+		return "This is get api";
+	}
+	
+	
+}

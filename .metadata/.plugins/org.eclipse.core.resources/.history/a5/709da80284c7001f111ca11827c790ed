@@ -1,0 +1,13 @@
+package com.ty.sb;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AppController {
+
+	@RequestMapping(value = "/msg")
+	public String getMsg() {
+		return "hi";
+	}
+}
